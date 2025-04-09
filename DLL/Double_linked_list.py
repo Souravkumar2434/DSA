@@ -133,6 +133,7 @@ class DoublyLinkedList:
 
 
 my_doubly_linked_list = DoublyLinkedList(1)
+my_doubly_linked_list.print_list()
 my_doubly_linked_list.append(2)
 my_doubly_linked_list.append(3)
 my_doubly_linked_list.append(4)
