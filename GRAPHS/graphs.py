@@ -51,12 +51,17 @@ my_graph.add_vertex('B')
 my_graph.add_vertex('C')
 my_graph.add_vertex('D')
 
+my_graph.print_graph()
+print("******************************")
+
 my_graph.add_edge('A','B')
 my_graph.add_edge('A','C')
 my_graph.add_edge('A','D')
 my_graph.add_edge('B','D')
 my_graph.add_edge('C','D')
+my_graph.print_graph()
 
+print("****************************")
 
 print('Graph before remove_vertex():')
 my_graph.print_graph()
@@ -67,21 +72,3 @@ my_graph.remove_vertex('D')
 
 print('\nGraph after remove_vertex():')
 my_graph.print_graph()
-
-
-
-"""
-    EXPECTED OUTPUT:
-    ----------------
-    Graph before remove_vertex():
-    A : ['B', 'C', 'D']
-    B : ['A', 'D']
-    C : ['A', 'D']
-    D : ['A', 'B', 'C']
-
-    Graph after remove_vertex():
-    A : ['B', 'C']
-    B : ['A']
-    C : ['A']
-
-"""

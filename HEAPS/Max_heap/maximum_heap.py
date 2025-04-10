@@ -63,16 +63,18 @@ myheap.insert(50)
 myheap.insert(65)
 
 print(myheap.heap)
+print("**********************************")
 
 
 myheap.remove()
 
 print(myheap.heap)
-
+print("**********************************")
 
 myheap.remove()
 
 print(myheap.heap)
+print("**********************************")
 
 
 """
